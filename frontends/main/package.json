@@ -14,7 +14,7 @@
     "text-encoding": "^0.7.0"
   },
   "scripts": {
-    "postbuild": "replace 'static' './static' build/static/css/*",
+    "postbuild": "replace '/static' '../../static' build/static/css/*",
     "start": "source $PWD/.env;react-scripts start",
     "build": "source $PWD/.env;react-scripts build && sed 's/\\\"\\/static/\\\"\\.\\/static/g' -i build/index.html",
     "test": "source $PWD/.env;react-scripts test --env=jsdom",

@@ -10,9 +10,11 @@
     "react-redux": "^5.0.7",
     "react-scripts": "^2.0.0",
     "redux": "^4.0.0",
+    "replace": "^1.1.0",
     "text-encoding": "^0.7.0"
   },
   "scripts": {
+    "postbuild": "replace 'static' './static' build/static/css/*",
     "start": "source $PWD/.env;react-scripts start",
     "build": "source $PWD/.env;react-scripts build && sed 's/\\\"\\/static/\\\"\\.\\/static/g' -i build/index.html",
     "test": "source $PWD/.env;react-scripts test --env=jsdom",

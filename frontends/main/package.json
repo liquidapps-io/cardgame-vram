@@ -8,17 +8,23 @@
     "react-dom": "^16.4.2",
     "react-modal": "^3.5.1",
     "react-redux": "^5.0.7",
-    "react-scripts": "^1.1.4",
+    "react-scripts": "^2.0.0",
     "redux": "^4.0.0",
     "text-encoding": "^0.7.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build && sed 's/\\\"\\/static/\\\"\\.\\/static/g' -i build/index.html",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "source $PWD/.env;react-scripts start",
+    "build": "source $PWD/.env;react-scripts build && sed 's/\\\"\\/static/\\\"\\.\\/static/g' -i build/index.html",
+    "test": "source $PWD/.env;react-scripts test --env=jsdom",
+    "eject": "source $PWD/.env;react-scripts eject"
   },
   "devDependencies": {
     "npm-run-all": "^4.1.3"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

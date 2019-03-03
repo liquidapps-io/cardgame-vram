@@ -5,7 +5,11 @@
     "zeus-box.json"
   ],
   "commands": {
-    "Test": "zeus test"
+    "Deploy contract": "zeus migrate",
+    "Run frontend locally": "zeus run frontend main",
+    "Build frontend": "zeus build frontend main",
+    "Deploy frontend": "zeus deploy frontend main",
+    "Deploy and register frontend": "zeus deploy frontend main --ipfs --register cardgame1111"
   },
   "dependencies":[
     "hooks-npm",

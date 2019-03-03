@@ -94,7 +94,7 @@ CONTRACT_START()
         uint64_t shard;
         uint64_t primary_key() const { return shard; }
     };
-    typedef eosio::multi_index<"users"_n, user_info> users_table_abi;
+    typedef eosio::multi_index<"users"_n, shardbucket> users_table_abi;
 
     typedef eosio::multi_index<name("seed"), seed> seed_table;
 

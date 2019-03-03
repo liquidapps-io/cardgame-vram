@@ -1,5 +1,4 @@
 import { Api, JsonRpc } from 'eosjs';
-import { Api, JsonRpc } from 'eosjs';
 import JsSignatureProvider from 'eosjs/dist/eosjs-jssig'
 
 // Main action call to blockchain
@@ -40,7 +39,7 @@ function postData(url = ``, data = {}) {
       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
       credentials: "same-origin", // include, *same-origin, omit
       headers: {
-        "Content-Type": "application/json",
+        // "Content-Type": "application/json",
         // "Content-Type": "application/x-www-form-urlencoded",
       },
       redirect: "follow", // manual, *follow, error

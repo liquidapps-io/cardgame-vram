@@ -14,7 +14,7 @@ https://github.com/liquidapps-io/zeus-cmd
 ```
 zeus unbox cardgame
 cd cardgame
-DEMUX_BACKEND=state_history_plugin zeus migrate
+zeus migrate
 zeus deploy frontend main
 ```
 

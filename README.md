@@ -8,7 +8,7 @@ The Elemental Battles Tutorial is divided into easy to follow lessons that take 
 ## Lesson 9 - vRAM
 ### Install the Zeus SDK
 
-https://github.com/liquidapps-io/zeus-cmd
+https://github.com/liquidapps-io/zeus-sdk
 
 ### Run a local EOSIO node, DAPP-Network system, DSP-Services and the deploy the game locally
 ```
